@@ -7,14 +7,32 @@ body {
     background-size: cover;
 }
 
+h2 {
+    font-family: 'MS Sans Serif', Geneva, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+    font-family: 'MS Sans Serif', Geneva, sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Div Menu */
+
 .menu {
     width: 100%;
     height: 110px;
     background-color: white;
     text-align: center;
-    font-size: 45px;
+    font-size: 65px;
     font-family: Stencil Std, fantasy;
 }
+
+/* /////////////////////////////////// */
+
+/* Photo CV */
 
 .resume {
     margin-top: 50px;
@@ -28,7 +46,11 @@ body {
     text-align: center;
 }
 
-nav{
+/* //////////////////////////////////////// */
+
+/* Menu */
+
+nav {
     width: 100%;
     margin: 0 auto;
     background-color: white;
@@ -38,24 +60,24 @@ nav{
     font-family: Stencil Std, fantasy;
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
 }
 
-nav ul li{
+nav ul li {
     float: left;
-    width: 33%;
+    width: 25%;
     text-align: center;
     position: relative;
 }
 
-nav ul::after{
+nav ul::after {
     content: "";
     display: table;
     clear: both;
 }
 
-nav a{
+nav a {
     display: block;
     text-decoration: none;
     color: black;
@@ -63,12 +85,12 @@ nav a{
     padding: 10px 0px;
 }
 
-nav a:hover{
+nav a:hover {
     color: orange;
     border-bottom: 2px solid gold;
 }
 
-.sous{
+.underRoll {
     display: none;
     box-shadow: 0px 1px 2px #CCC;
     background-color: white;
@@ -76,24 +98,101 @@ nav a:hover{
     width: 100%;
     z-index: 1000;
 }
-nav > ul li:hover .sous{
+
+nav>ul li:hover .underRoll {
     display: block;
 }
-.sous li{
+
+.underRoll li {
     float: none;
     width: 100%;
     text-align: center;
 }
-.sous a{
+
+.underRoll a {
     padding: 10px;
     border-bottom: none;
 }
-.sous a:hover{
+
+.underRoll a:hover {
     color: orange;
     border-bottom: 2px solid gold;
 }
-.deroulant > a::after{
-    content:" ▼";
+
+.roll>a::after {
+    content: " ▼";
     font-size: 12px;
 }
 
+/* ///////////////////////////////////////////// */
+
+/* Div page white */
+
+.page {
+    min-height: 100vh;
+    width: 60%;
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* ////////////////////////////////////////////// */
+
+/* Title school projects/personnals */
+
+.titleProjects {
+    height: 100px;
+    line-height: 100px;
+    font-size: 40px;
+    font-family: Stencil Std, fantasy;
+    text-align: center;
+}
+
+/* ////////////////////////////////////// */
+
+/* text-align : justify on p of the description project */
+
+.textProject {
+    text-align: justify;
+    font-size: 17px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* ///////////////////////////////////////////////// */
+
+/* img previous/next width height */
+
+.arrowImg {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgProject {
+    width: 800px;
+    height: 400px;
+}
+
+/* ///////////////////////////////////////////// */
+
+/* 3 divs to display arrows and images in the same line */
+
+.divArrowImg {
+    flex: 1;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.divImgProject {
+    flex: 1;
+    border: 2px solid black;
+    margin: auto;
+}
+
+.globalProject {
+    display: flex;
+}
