@@ -8,7 +8,7 @@ document.addEventListener('click', (e) => {
             document.body.removeChild(document.body.lastElementChild);
         }
 
-        var textExplicationImg = 'Page d\'acceuil du jeu'
+        var textExplicationImg = 'Page d\'accueil du jeu'
         var txtExplicationProjet = 'Ce projet consistait à coder le jeu de pierre-feuille-ciseaux très connu et de le coder ' +
             'en Javascript, ce jeu se joue uniquement contre l\'ordinateur.'
 
@@ -426,7 +426,7 @@ document.addEventListener('click', (e) => {
                     pTxtExpImg.appendChild(txtExpImg)
                     break;
                 case 6:
-                    textExplicationImg = 'Page d\'acceuil du jeu'
+                    textExplicationImg = 'Page d\'accueil du jeu'
                     txtExpImg = document.createTextNode(`${textExplicationImg}`)
                     pTxtExpImg.innerHTML = ''
                     pTxtExpImg.appendChild(txtExpImg)
@@ -465,7 +465,7 @@ document.addEventListener('click', (e) => {
 
             switch (i - 1) {
                 case 0:
-                    textExplicationImg = 'Page d\'acceuil du jeu'
+                    textExplicationImg = 'Page d\'accueil du jeu'
                     txtExpImg = document.createTextNode(`${textExplicationImg}`)
                     pTxtExpImg.innerHTML = ''
                     pTxtExpImg.appendChild(txtExpImg)

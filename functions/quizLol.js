@@ -8,7 +8,7 @@ document.addEventListener('click', (e) => {
             document.body.removeChild(document.body.lastElementChild);
         }
 
-        var textExplicationImg = 'Page d\'acceuil du quiz'
+        var textExplicationImg = 'Page d\'accueil du quiz'
         var txtExplicationProjet = 'Ce projet consistait à coder un quiz sur un jeu que j\'affectionne particulièrement (League of Legends). ' +
             'Le quiz a plusieurs difficultés et est composé pour chacune d\'elles de quatres questions et de quatres réponses proposées par question.'
 
@@ -489,7 +489,7 @@ document.addEventListener('click', (e) => {
                     pTxtExpImg.appendChild(txtExpImg)
                     break;
                 case 9:
-                    textExplicationImg = 'Page d\'acceuil du quiz'
+                    textExplicationImg = 'Page d\'accueil du quiz'
                     txtExpImg = document.createTextNode(`${textExplicationImg}`)
                     pTxtExpImg.innerHTML = ''
                     pTxtExpImg.appendChild(txtExpImg)
@@ -528,7 +528,7 @@ document.addEventListener('click', (e) => {
 
             switch (i - 1) {
                 case 0:
-                    textExplicationImg = 'Page d\'acceuil du quiz'
+                    textExplicationImg = 'Page d\'accueil du quiz'
                     txtExpImg = document.createTextNode(`${textExplicationImg}`)
                     pTxtExpImg.innerHTML = ''
                     pTxtExpImg.appendChild(txtExpImg)

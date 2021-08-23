@@ -333,7 +333,6 @@ document.addEventListener('click', function (e) {
 
         /////////////////////////////////////// FONCTION AFFICHER IMAGE NOUVELLE FENETRE ///////////////////////////////////////
 
-
         aImg1.addEventListener('click', (e) => {
             e.preventDefault()
             window.open(aImg1, '_blank', 'location=yes,top=500px, left=500px, height=570,width=520,scrollbars=yes,status=yes')
