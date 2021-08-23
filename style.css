@@ -2,9 +2,10 @@ body {
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    background-image: url('./images/NY_Background.jpg');
+    background-image: url('./images/BACKGROUND/NY_Background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 h2 {
@@ -155,13 +156,31 @@ nav>ul li:hover .underRoll {
 .textProject {
     text-align: justify;
     font-size: 17px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.textExpImg {
+    text-align: center;
+    font-size: 17px;
+}
+
+.textMarginBot {
+    color: white;
 }
 
 /* ///////////////////////////////////////////////// */
 
 /* img previous/next width height */
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 .arrowImg {
     width: 50px;
@@ -171,28 +190,56 @@ nav>ul li:hover .underRoll {
     margin-right: auto;
 }
 
+.imgCurrent {
+    width: 800px;
+    height: 400px;
+    animation-name: fadeInOut;
+    animation-duration: 0.5s;
+}
+
 .imgProject {
     width: 800px;
     height: 400px;
+    display: none;
+    
 }
 
 /* ///////////////////////////////////////////// */
 
 /* 3 divs to display arrows and images in the same line */
 
-.divArrowImg {
+.globalProject {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.divArrowImg1 {
     flex: 1;
     margin: auto;
-    margin-left: 10px;
-    margin-right: 10px;
+}
+
+.divArrowImg2 {
+    flex: 1;
+    margin: auto;
 }
 
 .divImgProject {
     flex: 1;
-    border: 2px solid black;
+    border: 1px solid black;
     margin: auto;
 }
 
-.globalProject {
-    display: flex;
+/* ///////////////////////////////////////////// */
+
+/* display iFrame */
+
+.divContainerFrame{
+    width: 100%;
+    height: 100vh;
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
 }
